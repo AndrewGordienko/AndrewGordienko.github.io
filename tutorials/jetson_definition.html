@@ -26,36 +26,70 @@
   
 <body>
   <div class="grid-container full">
-    <h2>Jetson Nano Definition</h2>
-    <h3>What is a jetson nano?</h3>
+    <h3>What is a Jetson Nano?</h3>
     <h4>Prerequisites</h4>
-    <p class="u-align-left">This tutorial is intended to be your very first tutorial in deep reinforcement learning.
-      In it you will make a program that learns to play lunar lander from AI Gym.
-      AI Gym is a game world for ai. If you don't know it I've got a quickie tutorial for you <a
-        href="/tutorials/quickies/aigym.html">here</a>.
-      It's easy to install with pip, and the main website has some getting started code examples that are only a few
-      lines.
-      Don't feel trapped in AI Gym though. You can use your agent to do other things too, like driving cars or balancing
-      robots
-      in the real world.<br>
-      If you don't know anything about neural networks or python you will find this tutorial fascinating, but probably a
-      bit abstract.
-      If you know python but don't know about neural networks, I highly recommend the book <a>Grokking Deep
-        Learning</a>.
-      That book will take you from zero to hero with neural networks, and can be easily finished in a month (two max) if
-      you find it fun. It also
-      doesn't assume you're a math god beforehand, as opposed to 90% of machine learning resources that will. (I hate
-      it. It's just
-      DRM for education.)<br>
-      Anyways, we will be using pytorch for the neural networks stuff. I have a quick tutorial on pytorch <a
-        href="/tutorials/quickies/pytorch.html">here</a>.
-      If you already know keras or tensorflow it should be fairly straightforward to follow this tutorial.<br>
-      For you experts out there, yes, technically, we don't need neural networks to do this.
-      There are endless options for generative or discriminative clustering algorithms, and many of them work <a
-        href="https://gym.openai.com/evaluations/eval_lEi8I8v2QLqEgzBxcvRIaA/#writeup">just fine</a>. Maybe
-      we can try some in different tutorials.<br>
+    <p class="u-align-left">Hello! If you are reading this article it means that you probably have access to a Jetson Nano! 
+      Congrats!  The question you are probably asking yourself at this point is then what is a Jetson Nano <em>really</em>? 
+      What can they be used for? Are Raspberry Pi’s now obselete? As well as a plethora of others. 
+      This article will aim to answer these questions for you, and get you started on your journey to using the Jetson Nano for various projects! <br>
     </p>
   </div>
+    
+  <div class="grid-container full">
+    <h4>Getting Started</h4>
+    <p class="u-align-left">
+      A Jetson Nano is a small computer, meaning that it has its own operating system, and does not differ very much from a PC running linux. 
+      The only differences are that it has (GPIO) pins that can be used to perform digital input or output functions, 
+      and has <strong>substantially</strong> less computation power than most modern PCs. It does have a central processing unit (CPU), and graphics processing unit (GPU), 
+      that will prove to be enough for most applications, and is more powerful  than a Raspberry Pi, due to its high performing Nvidia GPU. <br>
+    </p>
+  </div>
+  
+  <div class="grid-container full">
+    <h4>Answering Questions and the Bottlenecks Faced</h4>
+    <p class="u-align-left">
+      This leads us to the question of what they can be used for. 
+      The main bottlenecks most people will stumble into first is that the Jetson only has 2gb of random access memory (RAM). 
+      Random access memory is where everything gets stored in the short term, while the solid state drive or hard drive is used for long-term memory. 
+      What this means for you, the person reading this, is that the Jetson can’t handle a billion Chrome tabs like your laptop, open a bunch of youtube videos at once, 
+      or do anything too short-term memory intensive.  <br>
+      
+      The second bottleneck that avid machine learning enthusiasts will run into is that although the Jetson does have a CPU and GPU at the end of the day they are still
+      quite slow. Training machine learning models on the Jetson is basically pointless as your computer can do it so much faster. 
+      The Jetson also struggles with high frame rate computer vision tasks, where frames need to be assessed instantly for the results needed. 
+      But, if the projects you plan to don’t need immediate camera feedback and won't die because of a split-second delay, you should be completely fine. <br>
+      
+      The last question you may have is whether Raspberry Pi’s or Arduinos or similar microcontrollers or computers, are they now obsolete? 
+      The Jetson is basically a Raspberry Pi on steroids where the steroid is the addition of a GPU. So for projects where you need both a GPU and digital input and output, 
+      the Jetson is now the obvious choice. For all other projects that are not machine learning related, a Raspberry Pi will continue to serve you great, 
+      so don’t throw yours out <em>yet</em>. <br>
+    </p>
+  </div>
+  
+  <div class="grid-container full">
+    <h4>But... how does an Arduino stack up?</h4>
+    <p class="u-align-left">
+      As for microcontrollers like arduino the truth is that they are microcontrollers and that is it. 
+      You load in some code, hit run, connect a power supply, and your code runs by using the pins and their capacity for digital input and output. 
+      A good example of an arduino project would be an automatic watering device. Soil moisture is detected, and if it is below some threshold a servo activates 
+      and water is poured. But say you want to send a text message when your water runs out automatically, well arduino makes your life very hard. 
+      You need to buy an attachment and learn the obscure libraries with it, and don't forget that the entire thing is coded in a language similar to C. <br>
+      
+      The benefit of a raspberry pi in this case compared to an arduino is that since there is an operating system onboard you can use your favorite coding IDE, 
+      and python, and all the libraries that python has to offer, to make your projects come to life. So instead of buying a shield you could simply write a standard 
+      FLASK API and live your life in peace. <br>
+    </p>
+  </div>
+  
+  <div class="grid-container full">
+    <h4>Concluding the rambling o.o</h4>
+    <p class="u-align-left">
+      So in conclusion of this rambling. Jetsons are used for on-the-go machine learning projects. 
+      Raspberry Pi’s are used for everything that doesn't require much GPU power, and arduinos are simple microcontrollers with very limited standalone capabilities (but you already
+      knew that).  <br>
+    </p>
+  </div>
+  
 
 </body>
 </html>
