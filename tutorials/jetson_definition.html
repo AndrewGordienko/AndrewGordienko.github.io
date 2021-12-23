@@ -27,7 +27,6 @@
 <body>
   <div class="grid-container full">
     <h3>What is a Jetson Nano?</h3>
-    <h4>Prerequisites</h4>
     <p class="u-align-left">Hello! If you are reading this article it means that you probably have access to a Jetson Nano! 
       Congrats!  The question you are probably asking yourself at this point is then what is a Jetson Nano <em>really</em>? 
       What can they be used for? Are Raspberry Pi’s now obselete? As well as a plethora of others. 
@@ -52,13 +51,13 @@
       The main bottlenecks most people will stumble into first is that the Jetson only has 2gb of random access memory (RAM). 
       Random access memory is where everything gets stored in the short term, while the solid state drive or hard drive is used for long-term memory. 
       What this means for you, the person reading this, is that the Jetson can’t handle a billion Chrome tabs like your laptop, open a bunch of youtube videos at once, 
-      or do anything too short-term memory intensive.  <br>
-      
+      or do anything too short-term memory intensive.  <br /> 
+      <br /> 
       The second bottleneck that avid machine learning enthusiasts will run into is that although the Jetson does have a CPU and GPU at the end of the day they are still
       quite slow. Training machine learning models on the Jetson is basically pointless as your computer can do it so much faster. 
       The Jetson also struggles with high frame rate computer vision tasks, where frames need to be assessed instantly for the results needed. 
-      But, if the projects you plan to don’t need immediate camera feedback and won't die because of a split-second delay, you should be completely fine. <br>
-      
+      But, if the projects you plan to don’t need immediate camera feedback and won't die because of a split-second delay, you should be completely fine. <br /> 
+      <br /> 
       The last question you may have is whether Raspberry Pi’s or Arduinos or similar microcontrollers or computers, are they now obsolete? 
       The Jetson is basically a Raspberry Pi on steroids where the steroid is the addition of a GPU. So for projects where you need both a GPU and digital input and output, 
       the Jetson is now the obvious choice. For all other projects that are not machine learning related, a Raspberry Pi will continue to serve you great, 
@@ -73,8 +72,8 @@
       You load in some code, hit run, connect a power supply, and your code runs by using the pins and their capacity for digital input and output. 
       A good example of an arduino project would be an automatic watering device. Soil moisture is detected, and if it is below some threshold a servo activates 
       and water is poured. But say you want to send a text message when your water runs out automatically, well arduino makes your life very hard. 
-      You need to buy an attachment and learn the obscure libraries with it, and don't forget that the entire thing is coded in a language similar to C. <br>
-      
+      You need to buy an attachment and learn the obscure libraries with it, and don't forget that the entire thing is coded in a language similar to C. <br /> 
+      <br /> 
       The benefit of a raspberry pi in this case compared to an arduino is that since there is an operating system onboard you can use your favorite coding IDE, 
       and python, and all the libraries that python has to offer, to make your projects come to life. So instead of buying a shield you could simply write a standard 
       FLASK API and live your life in peace. <br>
