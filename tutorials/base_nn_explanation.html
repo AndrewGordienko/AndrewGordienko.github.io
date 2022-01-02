@@ -84,5 +84,62 @@
     </div>
   </div>
   
+  <div class="grid-container full">
+    <p class="u-align-left">Let’s look at two more cases that will clarify this further. <br>
+    </p>
+  </div>
+  
+  <div class="grid-container halves u-align-left">
+    <div class="left">
+      <h5>Learning about perceptrons</h5>
+      <p>
+        The first case is called a perceptron. Imagine that you have two input nodes that connect directly to the output node with string. 
+        Each string has a weight associated with it of how much to magnify the number that the input node is set to. The weight can be 5 or 0.2, or any other number. 
+        Each step of the journey along the way between sets of nodes also has something called a bias. Now you are probably thinking, wow that’s so incredibly boring, 
+        and why should I care about these weights and biases! To that, I say: remember that neural networks are the backbone for all learning-related AI use cases, 
+        and let’s talk about why weights and biases matter now. Basically, the way to calculate the value of the output once you have weights and biases is to add up all 
+        the weights, add the bias once to that sum, and then apply a fancy activation function to it that transforms the output in a constant way depending on your use case. <br /> 
+        <br /> 
+        Now that we have an input we can assess whether that is truly the output that we wanted. For example, say that we had an input of one and two and expected output of five,
+        but instead got six - now what? Well, now we do backpropagation. Backpropagation is a whole bunch of really fancy math that is boring and difficult, 
+        but what happens in the backpropagation step is that all the weights and biases are tuned just a bit to get closer to the output expected. Over time if we feed inputs 
+        and outputs to the network it will be able to learn. <br>
+      </p>
+    </div>
+
+    <div class="right">
+      <img src="/images/perceptron.png" style="width:400px;height:200px;">
+    </div>
+  </div>
+  
+  <div class="grid-container halves u-align-left">
+    <div class="left">
+      <img src="/images/architecture.png" style="width:400px;height:300px;">
+    </div>
+
+    <div class="right">
+      <h5>Full neural network architecture</h5>
+      <p>
+        The second case is what happens when the input is not directly mapped to the output. In that case, we simply add more layers between the input and the output, 
+        and lay strings between all the nodes, and start training once more. There are a variety of neural network architectures, each with its own pros or cons, 
+        but to start a network that has some amount of inputs that connects to a layer with a thousand twenty-four nodes, that dials down to five hundred and twelve, 
+        that dials down to the expected output, will get you very far and serve you well for most cases. <br /> 
+        <br /> 
+        This is why neural networks are so great, we can feed it pixel data of what the camera sees, and then have it output four numbers corresponding to what power level 
+        the four wheels of the cars should be set to, and there are so many more use cases of this f(x) = y type of problem. From learning to master chess to self-driving 
+        cars to recognizing voices, this can all be solved by using a neural network which is just a glorified function searcher for f(x) = y. <br /> 
+      </p>
+    </div>
+  </div>
+  
+  <div class="grid-container full">
+    <h3>Concluding our new knowledge O_o</h3>
+    <p class="u-align-left">Hopefully, this article made quite a bit of sense, and you now have a better understanding of neural networks, and can answer what they are, 
+      and why we use them :). <br>
+    </p>
+  </div>
+  
+  
+  
   </body>
 </html>
